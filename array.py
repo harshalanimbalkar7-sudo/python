@@ -38,3 +38,14 @@ arr = [10, 20, 10, 30, 10]
 num = int(input("Enter element: "))
 
 print("Frequency =", arr.count(num))
+
+
+arr = [10, 20, 30, 40, 50]
+
+first = arr[0]
+for i in range(len(arr) - 1):
+    arr[i] = arr[i + 1]
+
+arr[-1] = first
+
+print(arr)
