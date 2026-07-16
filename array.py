@@ -31,3 +31,10 @@ for i in arr:
 
 print("Even =", even)
 print("Odd =", odd)
+
+
+arr = [10, 20, 10, 30, 10]
+
+num = int(input("Enter element: "))
+
+print("Frequency =", arr.count(num))
