@@ -50,3 +50,26 @@ for i in range(n):
             numbers[j], numbers[j+1] = numbers[j+1], numbers[j]
 
 print(numbers)
+
+
+numbers = [2,4,6,8,10,12,14]
+
+key = int(input("Enter number: "))
+
+low = 0
+high = len(numbers)-1
+
+while low <= high:
+    mid = (low + high)//2
+
+    if numbers[mid] == key:
+        print("Found")
+        break
+
+    elif numbers[mid] < key:
+        low = mid + 1
+
+    else:
+        high = mid - 1
+else:
+    print("Not Found")
