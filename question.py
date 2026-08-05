@@ -8,3 +8,17 @@ for i in numbers:
             duplicates.append(i)
 
 print("Duplicate elements:", duplicates)
+
+
+
+text = input("Enter a string: ")
+
+frequency = {}
+
+for char in text:
+    if char in frequency:
+        frequency[char] += 1
+    else:
+        frequency[char] = 1
+
+print(frequency)
