@@ -38,3 +38,15 @@ for i in range(len(A)):
         result[i][j] = A[i][j] + B[i][j]
 
 print(result)
+
+
+numbers = [45,12,67,23,89]
+
+n = len(numbers)
+
+for i in range(n):
+    for j in range(0, n-i-1):
+        if numbers[j] > numbers[j+1]:
+            numbers[j], numbers[j+1] = numbers[j+1], numbers[j]
+
+print(numbers)
