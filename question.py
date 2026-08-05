@@ -89,3 +89,21 @@ for ch in string.lower():
 
 print("Vowels =", vowels)
 print("Consonants =", consonants)
+
+
+
+class Student:
+
+    def getData(self):
+        self.roll = int(input("Enter Roll No: "))
+        self.name = input("Enter Name: ")
+        self.marks = float(input("Enter Marks: "))
+
+    def display(self):
+        print("Roll:", self.roll)
+        print("Name:", self.name)
+        print("Marks:", self.marks)
+
+s = Student()
+s.getData()
+s.display()
